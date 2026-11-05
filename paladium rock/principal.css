@@ -1,0 +1,120 @@
+header {
+    height: 110px;
+    background-image: url("/img/fondo\ sin\ logo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu summary {
+    list-style: none;
+    cursor: pointer;
+    height: 110px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu-contenido {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 150px;
+    background-color: #240102;
+    padding: 15px;
+    z-index: 10;
+}
+
+.menu-contenido a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    -webkit-text-stroke: 1px black;
+}  
+
+.albumes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.album {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.album img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album:hover {
+    transform: translateY(-5px);
+}
+
+body{
+    background-color: #590405;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body > h2 {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px 0 0 0;
+    padding: 15px 0;
+    -webkit-text-stroke: 1px black;
+}
+
+h3 {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    -webkit-text-stroke: 2px #000000;
+}
+
+footer {
+    height: 175px;
+    background-image: url(img/fondo\ sin\ logo.png);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
